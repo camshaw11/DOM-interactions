@@ -33,6 +33,13 @@ function makeBlue(e) {
 }
 // CREATE FUNCTION hide HERE
 
+function hide(e) {
+  // toggle invisible class to target
+  e.target.classList.toggle('invisible');
+  // call function
+  updateCounts();
+}
+
 function updateCounts () {
   var totals = {
     blue: 0,
